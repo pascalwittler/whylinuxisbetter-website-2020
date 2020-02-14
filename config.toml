@@ -1,0 +1,4 @@
+baseURL = "https://whylinuxisbetter.net/"
+languageCode = "en-us"
+title = "Why Linux is better"
+theme = "whylinuxisbetter-2020"

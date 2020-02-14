@@ -1,0 +1,12 @@
+name = "Why Linux is better"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = ""
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Pascal Wittler"
+  homepage = "https://pascalwittler.de"

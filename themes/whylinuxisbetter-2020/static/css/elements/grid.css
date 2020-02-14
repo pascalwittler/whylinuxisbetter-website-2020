@@ -1,0 +1,8 @@
+.content-wrap {
+  width: 100%;
+  max-width: var(--content-width);
+  padding-right: var(--content-margin);
+  padding-left: var(--content-margin);
+  margin-right: auto;
+  margin-left: auto;
+}
