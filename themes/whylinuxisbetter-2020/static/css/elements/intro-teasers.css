@@ -1,0 +1,76 @@
+.intro-teasers ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.intro-teasers ul {
+  list-style-type: none;
+}
+
+.intro-teasers ul li {
+  flex-basis: calc((100% / 5) - 8px);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgrey);
+  transition: border-color .6s;
+}
+
+.intro-teasers ul li:not(:nth-child(5n + 1)) {
+  margin-left: 10px;
+}
+
+.intro-teasers ul li:nth-child(n + 6) {
+  margin-top: 10px;
+}
+
+.intro-teasers ul li:hover {
+  border-color: var(--color-primary);
+}
+
+.intro-teasers ul li a {
+  position: relative;
+  display: block;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color .6s;
+}
+
+.intro-teasers ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  padding-top: 100%;
+  opacity: none;
+  pointer-events: none;
+}
+
+.intro-teasers ul li:hover a {
+  color: var(--color-primary);
+}
+
+.intro-teasers ul li a img,
+.intro-teasers ul li a span {
+  position: absolute;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+
+.intro-teasers ul li a img {
+  top: 33%;
+  width: auto;
+  max-width: 70%;
+  height: auto;
+  max-height: 30%;
+}
+
+.intro-teasers ul li a span {
+  top: 75%;
+  width: 100%;
+  padding: 0 20px;
+  font-weight: 600;
+  text-align: center;
+}
