@@ -10,5 +10,11 @@ h5,
 .h5,
 h6,
 .h6 {
+  color: var(--color-primary);
   font-family: var(--font-family-headlines);
+}
+
+h2 + *,
+.h2 + * {
+  margin-top: 20px;
 }

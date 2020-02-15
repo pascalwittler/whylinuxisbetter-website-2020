@@ -2,9 +2,10 @@
   --color-white: #ffffff;
   --color-black: #000000;
   --color-primary: #6b0504;
-  --color-secondary: #6b0504;
   --color-main-text: #333333;
-  --color-main-background: #fbfffe;
+  --color-main-background: var(--color-white);
+  --color-lightgrey: #cccccc;
+  --color-darkgrey: #666666;
 
   --font-family: 'Lato', sans-serif;
   --font-family-headlines: 'Roboto', sans-serif;
@@ -12,4 +13,6 @@
   --content-width: 1230px;
   --content-margin: 30px;
   --gap: 30px;
+
+  --height-header: 90px;
 }

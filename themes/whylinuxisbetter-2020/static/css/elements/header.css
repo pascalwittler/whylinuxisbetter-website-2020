@@ -1,0 +1,51 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: var(--height-header);
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-lightgrey);
+  z-index: 50;
+}
+
+header + main {
+  margin-top: var(--height-header);
+}
+
+header .content-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header .language-menu-opener {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+header .language-menu-opener span {
+  display: none;
+}
+
+header .language-menu-opener::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../../img/icons/language.svg);
+  background-size: contain;
+  background-position: center;
+}
