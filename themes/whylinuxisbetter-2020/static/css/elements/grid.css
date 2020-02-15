@@ -6,3 +6,12 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+section:not(.full-width) {
+  padding-top: var(--padding-section-vertically);
+  padding-bottom: var(--padding-section-vertically);
+}
+
+section:not(.full-width) + section {
+  padding-top: 0;
+}
